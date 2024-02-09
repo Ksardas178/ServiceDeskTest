@@ -59,9 +59,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DisplayName" xml:space="preserve">
-    <value>ServiceDesk</value>
+    <value>Service Desk</value>
   </data>
   <data name="CoverTitle" xml:space="preserve">
-    <value>ServiceDesk</value>
+    <value>Модуль "Service Desk"</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>Предназначен для автоматизации работы службы поддержки в части регистрации обращений, планирования их решения, взаимодействия с заказчиками, получения аналитических отчетов и т.п.</value>
+  </data>
+  <data name="CoverTab_Tab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="CoverGroup_Journals" xml:space="preserve">
+    <value>Журналы</value>
+  </data>
+  <data name="CoverAction_ShowRequestsJournal" xml:space="preserve">
+    <value>Журнал обращений</value>
+  </data>
+  <data name="CoverDescription_ShowRequestsJournal" xml:space="preserve">
+    <value>Справочник прежназначен для регистрации, фиксации хода работ по обращениям от клиентов</value>
+  </data>
+  <data name="CoverGroup_Settings" xml:space="preserve">
+    <value>Настройка</value>
+  </data>
+  <data name="CoverAction_Actions" xml:space="preserve">
+    <value>Воздействия</value>
+  </data>
+  <data name="CoverDescription_Actions" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverAction_Priorities" xml:space="preserve">
+    <value>Приоритеты</value>
+  </data>
+  <data name="CoverDescription_Priorities" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverAction_Urgencies" xml:space="preserve">
+    <value>Срочности</value>
+  </data>
+  <data name="CoverDescription_Urgencies" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverAction_PrioritiesComparation" xml:space="preserve">
+    <value>Сопоставление приоритетов</value>
+  </data>
+  <data name="CoverDescription_PrioritiesComparation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverAction_RequestTypes" xml:space="preserve">
+    <value>Типы обращений</value>
+  </data>
+  <data name="CoverDescription_RequestTypes" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverAction_CompaniesOnSupport" xml:space="preserve">
+    <value>Компании на поддержке</value>
+  </data>
+  <data name="CoverDescription_CompaniesOnSupport" xml:space="preserve">
+    <value />
   </data>
 </root>

@@ -47,7 +47,11 @@
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "ServiceDeskUrgency",
+  "IsVisible": false,
   "OperationsClass": "",
+  "Overridden": [
+    "IsVisible"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",

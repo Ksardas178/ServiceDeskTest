@@ -11,18 +11,94 @@
   "CompanyCode": "avis",
   "Cover": {
     "NameGuid": "60b555ca-c2fa-404e-9f21-ea1e793aa9c4",
-    "Actions": [],
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "57dc2847-2aa2-4eb7-972e-f0036c8548c9",
+        "Name": "PrioritiesComparation",
+        "EntityTypeId": "8637df79-3d75-4e29-b3af-d5639d94c924",
+        "GroupId": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825",
+        "PreviousItemGuid": "9f0b082f-20a8-47a5-9dbb-50b1fef1b385"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "86a1df3b-bcea-4eff-aaf9-a8c6c1595327",
+        "Name": "RequestTypes",
+        "EntityTypeId": "a7f966a1-6e77-476b-8d8f-1a59ddd79d33",
+        "GroupId": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825",
+        "PreviousItemGuid": "57dc2847-2aa2-4eb7-972e-f0036c8548c9"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "8e6ca2e1-2a8d-4197-a7cc-1055991026e7",
+        "Name": "Priorities",
+        "EntityTypeId": "6eb87210-5c4f-4e52-9858-391c55fb3c56",
+        "GroupId": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825",
+        "PreviousItemGuid": "a0b5013d-1103-410f-a9f5-2aba9fcc9813"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "9f0b082f-20a8-47a5-9dbb-50b1fef1b385",
+        "Name": "Urgencies",
+        "EntityTypeId": "4f9e3eaa-c2d0-431e-b789-d923530e3f1d",
+        "GroupId": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825",
+        "PreviousItemGuid": "8e6ca2e1-2a8d-4197-a7cc-1055991026e7"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "a0b5013d-1103-410f-a9f5-2aba9fcc9813",
+        "Name": "Actions",
+        "EntityTypeId": "6752bd7a-d814-4ed1-a681-fad9b45ce014",
+        "GroupId": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "a1cfe1bc-1d58-4fd6-85a6-b13f1a49b9e0",
+        "Name": "ShowRequestsJournal",
+        "EntityTypeId": "2a5be039-b60d-4fc3-b784-4966ca299367",
+        "GroupId": "9f4408ca-8ba9-415d-80d2-65e3d05cea5f"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "f192658a-4d83-4630-8bec-8cc4f435f558",
+        "Name": "CompaniesOnSupport",
+        "EntityTypeId": "afce4b0d-c9ee-469e-a53f-61fc2b9097c6",
+        "GroupId": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825",
+        "PreviousItemGuid": "86a1df3b-bcea-4eff-aaf9-a8c6c1595327"
+      }
+    ],
     "Background": null,
     "Footer": {
       "NameGuid": "b1b0825f-ce47-4e8d-8c6f-2ceaf8d8d047",
       "BackgroundPosition": "Stretch"
     },
-    "Groups": [],
+    "Groups": [
+      {
+        "NameGuid": "9f4408ca-8ba9-415d-80d2-65e3d05cea5f",
+        "Name": "Journals",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconJournals_9f4408ca8ba9415d80d265e3d05cea5f.png",
+        "TabId": "e97a2cd6-1d4e-4eea-8ff6-91d8869d8126"
+      },
+      {
+        "NameGuid": "9acc6d2e-f901-4adc-9ec4-3e3d6bc74825",
+        "Name": "Settings",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSettings_9acc6d2ef9014adc9ec43e3d6bc74825.png",
+        "PreviousItemGuid": "9f4408ca-8ba9-415d-80d2-65e3d05cea5f",
+        "TabId": "e97a2cd6-1d4e-4eea-8ff6-91d8869d8126"
+      }
+    ],
     "Header": {
       "NameGuid": "1d030171-b2ba-40a8-a9e8-a8a64edbe2fc",
       "BackgroundPosition": "Stretch"
     },
-    "Tabs": []
+    "Tabs": [
+      {
+        "NameGuid": "e97a2cd6-1d4e-4eea-8ff6-91d8869d8126",
+        "Name": "Tab"
+      }
+    ]
   },
   "Dependencies": [
     {
