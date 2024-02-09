@@ -1,0 +1,60 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "da5ef0fa-8de7-4246-ac3c-0d0ec141ff10",
+  "Name": "StudySolution",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "avis.StudySolution.Client",
+  "ClientBaseAssemblyName": "avis.StudySolution.ClientBase",
+  "ClientBaseNamespace": "avis.StudySolution.ClientBase",
+  "ClientNamespace": "avis.StudySolution.Client",
+  "Code": "StudySo",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "85df6b3d-06cf-4197-bb33-324a6b3dd5f6",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "32fda152-33bd-4d70-8ca0-a51d0dd6293e",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "2eb727e6-62d6-4209-8375-e62ae685a259",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.StudySolution",
+  "IsolatedAssemblyName": "avis.StudySolution.Isolated",
+  "IsolatedNamespace": "avis.StudySolution.Isolated",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.StudySolution",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "avis.StudySolution.Server",
+  "ServerNamespace": "avis.StudySolution.Server",
+  "SharedAssemblyName": "avis.StudySolution.Shared",
+  "SharedNamespace": "avis.StudySolution.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
