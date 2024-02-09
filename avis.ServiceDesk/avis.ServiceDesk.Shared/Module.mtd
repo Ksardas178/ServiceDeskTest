@@ -1,0 +1,62 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "03417bee-e0b3-4c28-b5b9-a887b6d03d8c",
+  "Name": "ServiceDesk",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "avis.ServiceDesk.Client",
+  "ClientBaseAssemblyName": "avis.ServiceDesk.ClientBase",
+  "ClientBaseNamespace": "avis.ServiceDesk.ClientBase",
+  "ClientNamespace": "avis.ServiceDesk.Client",
+  "Code": "Service",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "60b555ca-c2fa-404e-9f21-ea1e793aa9c4",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "b1b0825f-ce47-4e8d-8c6f-2ceaf8d8d047",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "1d030171-b2ba-40a8-a9e8-a8a64edbe2fc",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "da5ef0fa-8de7-4246-ac3c-0d0ec141ff10",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.ServiceDesk",
+  "IsolatedAssemblyName": "avis.ServiceDesk.Isolated",
+  "IsolatedNamespace": "avis.ServiceDesk.Isolated",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.ServiceDesk",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "avis.ServiceDesk.Server",
+  "ServerNamespace": "avis.ServiceDesk.Server",
+  "SharedAssemblyName": "avis.ServiceDesk.Shared",
+  "SharedNamespace": "avis.ServiceDesk.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
