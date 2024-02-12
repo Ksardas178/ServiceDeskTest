@@ -62,10 +62,10 @@
     <value>Наименование</value>
   </data>
   <data name="DisplayName" xml:space="preserve">
-    <value>Типы обращений</value>
+    <value>Тип обращения</value>
   </data>
   <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Типы обращений</value>
+    <value>Тип обращения</value>
   </data>
   <data name="CollectionDisplayName" xml:space="preserve">
     <value>Типы обращений</value>
