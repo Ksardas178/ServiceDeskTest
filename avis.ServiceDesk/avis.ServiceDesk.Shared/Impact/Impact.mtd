@@ -32,7 +32,7 @@
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "4a6a0e23-3b71-4ee4-967a-365a2da9a4af",
-          "Name": "Control",
+          "Name": "Name",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",

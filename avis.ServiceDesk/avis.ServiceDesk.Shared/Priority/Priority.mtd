@@ -32,13 +32,26 @@
         {
           "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
           "NameGuid": "ac9501c4-63a9-45e7-b88e-3413fa540024",
-          "Name": "Control",
+          "Name": "Name",
           "ColumnNumber": 0,
           "ColumnSpan": 1,
           "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
           "ParentGuid": "db5e446c-943d-4906-8622-1c881450f4fa",
           "PropertyGuid": "fccca940-5222-4f9d-92b8-685bbfe82218",
           "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "7dec0e47-4b2a-4de4-8aef-12abb6f2bff5",
+          "Name": "ReactionTime",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+          "ParentGuid": "db5e446c-943d-4906-8622-1c881450f4fa",
+          "PropertyGuid": "8bb71939-53fd-4f0a-bb87-048a0cb91925",
+          "RowNumber": 1,
           "RowSpan": 1,
           "Settings": []
         }
