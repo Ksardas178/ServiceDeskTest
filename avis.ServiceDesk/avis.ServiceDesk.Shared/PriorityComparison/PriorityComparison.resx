@@ -59,6 +59,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DefaultNameHint" xml:space="preserve">
-    <value>&lt;Срочность&gt;_&lt;Воздействие&gt;</value>
+    <value>{0}_{1}</value>
+  </data>
+  <data name="DefaultUrgencyHint" xml:space="preserve">
+    <value>&lt;Срочность&gt;</value>
+  </data>
+  <data name="DefaultImpactHint" xml:space="preserve">
+    <value>&lt;Воздействие&gt;</value>
   </data>
 </root>

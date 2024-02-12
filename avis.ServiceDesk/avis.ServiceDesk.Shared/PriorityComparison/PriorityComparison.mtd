@@ -152,7 +152,9 @@
   ],
   "PublicStructures": [],
   "ResourcesKeys": [
-    "DefaultNameHint"
+    "DefaultNameHint",
+    "DefaultUrgencyHint",
+    "DefaultImpactHint"
   ],
   "RibbonCardMetadata": {
     "NameGuid": "d755f19f-d5c6-4506-8430-9708cccf34aa",

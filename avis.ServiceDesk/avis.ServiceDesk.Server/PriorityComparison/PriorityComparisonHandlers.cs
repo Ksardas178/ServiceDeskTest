@@ -12,7 +12,11 @@ namespace avis.ServiceDesk
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)
     {
-      _obj.Name = avis.ServiceDesk.PriorityComparisons.Resources.DefaultNameHint;
+      _obj.Name = avis.ServiceDesk.PriorityComparisons.Resources.DefaultNameHintFormat
+        (
+          avis.ServiceDesk.PriorityComparisons.Resources.DefaultUrgencyHint,
+          avis.ServiceDesk.PriorityComparisons.Resources.DefaultImpactHint
+         );
     }
   }
 

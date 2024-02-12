@@ -7,17 +7,30 @@ using avis.ServiceDesk.PriorityComparison;
 
 namespace avis.ServiceDesk
 {
+
   partial class PriorityComparisonClientHandlers
   {
 
     public virtual void UrgencyValueInput(avis.ServiceDesk.Client.PriorityComparisonUrgencyValueInputEventArgs e)
     {
-      Functions.PriorityComparison.UpdateName(_obj);
+      UpdateName(e.NewValue, _obj.Impact);
     }
 
     public virtual void ImpactValueInput(avis.ServiceDesk.Client.PriorityComparisonImpactValueInputEventArgs e)
     {
-      Functions.PriorityComparison.UpdateName(_obj);
+      UpdateName(_obj.Urgency, e.NewValue);
+    }
+    
+    /// <summary>
+    /// Обновление наименования записи справочника.
+    /// </summary>
+    private void UpdateName(IUrgency urgency, IImpact impact)
+    {
+      _obj.Name = avis.ServiceDesk.PriorityComparisons.Resources.DefaultNameHintFormat
+        (
+          urgency != null ? urgency.DisplayValue : avis.ServiceDesk.PriorityComparisons.Resources.DefaultUrgencyHint,
+          impact != null ? impact.DisplayValue : avis.ServiceDesk.PriorityComparisons.Resources.DefaultImpactHint
+         );
     }
   }
 
