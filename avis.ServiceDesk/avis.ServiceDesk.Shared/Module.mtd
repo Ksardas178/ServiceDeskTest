@@ -32,6 +32,11 @@
       "MinVersion": ""
     }
   ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "a7f966a1-6e77-476b-8d8f-1a59ddd79d33"
+    }
+  ],
   "IconResourcesKeys": [],
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
