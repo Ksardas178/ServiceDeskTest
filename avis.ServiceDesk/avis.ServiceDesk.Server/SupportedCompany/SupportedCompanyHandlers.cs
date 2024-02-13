@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Sungero.Core;
 using Sungero.CoreEntities;
-using avis.ServiceDesk.CompanyOnSupport;
+using avis.ServiceDesk.SupportedCompany;
 
 namespace avis.ServiceDesk
 {
-  partial class CompanyOnSupportServerHandlers
+  partial class SupportedCompanyServerHandlers
   {
 
     public override void Created(Sungero.Domain.CreatedEventArgs e)
@@ -19,7 +19,7 @@ namespace avis.ServiceDesk
   }
 
 
-  partial class CompanyOnSupportContactPropertyFilteringServerHandler<T>
+  partial class SupportedCompanyContactPropertyFilteringServerHandler<T>
   {
 
     public virtual IQueryable<T> ContactFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)

@@ -57,6 +57,7 @@
       "IsDisplayValue": true,
       "IsQuickSearchAllowed": true,
       "IsRequired": true,
+      "IsUnique": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1"
     }

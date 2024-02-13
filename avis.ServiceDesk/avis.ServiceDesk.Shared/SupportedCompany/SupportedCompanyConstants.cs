@@ -3,7 +3,7 @@ using Sungero.Core;
 
 namespace avis.ServiceDesk.Constants
 {
-  public static class CompanyOnSupport
+  public static class SupportedCompany
   {
 
   }

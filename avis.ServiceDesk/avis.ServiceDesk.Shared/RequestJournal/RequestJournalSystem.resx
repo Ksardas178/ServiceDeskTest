@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Журнал обращений</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Обращение</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Обращение</value>
+  </data>
+  <data name="Property_Number" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="Property_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Property_VendorNumber" xml:space="preserve">
+    <value>Номер у вендора</value>
+  </data>
+  <data name="Property_Company" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Property_Contact" xml:space="preserve">
+    <value>Контактное лицо</value>
+  </data>
+  <data name="Property_RequestType" xml:space="preserve">
+    <value>Тип обращения</value>
+  </data>
+  <data name="Property_Urgency" xml:space="preserve">
+    <value>Срочность</value>
+  </data>
+  <data name="Property_Impact" xml:space="preserve">
+    <value>Воздействие</value>
+  </data>
+  <data name="Property_Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="Property_Responsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="Property_RegistrationDate" xml:space="preserve">
+    <value>Дата регистрации</value>
+  </data>
+  <data name="Property_SolutionDatePlan" xml:space="preserve">
+    <value>Дата решения (план)</value>
+  </data>
+  <data name="Property_SolutionDate" xml:space="preserve">
+    <value>Дата решения (факт)</value>
+  </data>
+  <data name="Property_LaboriousnessPlan" xml:space="preserve">
+    <value>Трудозатраты (план)</value>
+  </data>
+  <data name="Property_Laboriousness" xml:space="preserve">
+    <value>Трудозатраты (факт)</value>
+  </data>
+  <data name="Property_Communication" xml:space="preserve">
+    <value>Текст переписки</value>
+  </data>
+  <data name="Property_SolutionCourse" xml:space="preserve">
+    <value>Ход решения</value>
+  </data>
+  <data name="Property_RequestState" xml:space="preserve">
+    <value>Состояние обращения</value>
+  </data>
+  <data name="Enum_RequestState_Registration" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="Enum_RequestState_InWork" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="Enum_RequestState_Awaiting" xml:space="preserve">
+    <value>Ожидание</value>
+  </data>
+  <data name="Enum_RequestState_Closed" xml:space="preserve">
+    <value>Закрыто</value>
+  </data>
+  <data name="ControlGroup_4fb638e727f94134927849307179814f" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_e2fa65a3bab4459ead112e0e078bf5a6" xml:space="preserve">
+    <value>Общее</value>
+  </data>
+  <data name="ControlGroup_660964be116a458dbff2200386c8b689" xml:space="preserve">
+    <value>Инициатор</value>
+  </data>
+  <data name="ControlGroup_ea88dc570d854b45b9fb1b7181bdb7ce" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="ControlGroup_60c5b46514aa4d26981912756639a3c1" xml:space="preserve">
+    <value>Планирование</value>
+  </data>
+  <data name="Form_d5f40df7e3e644cca28c4f4bb73fbd98" xml:space="preserve">
+    <value>Текст переписки</value>
+  </data>
+  <data name="ControlGroup_82fb640091fc45729598583a58491ee1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Form_976346ed486544d2a06d6de63b1eea48" xml:space="preserve">
+    <value>Ход решения</value>
+  </data>
+  <data name="ControlGroup_a42bf318d172413491c19f06c4f8fc1b" xml:space="preserve">
+    <value />
+  </data>
+</root>
