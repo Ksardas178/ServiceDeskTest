@@ -909,6 +909,15 @@
         "ActionGuid": "4e171895-5f8c-4ff6-9fc6-56cc35cedaeb",
         "Index": 1,
         "ParentGuid": "44b57446-2bf1-4b07-b65e-8b5ef479cf56"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "2e8a687b-d320-43e8-ae06-f73a90dfb21e",
+        "Name": "SendTaskForResponsible",
+        "ActionGuid": "9e623ea2-77dd-47f6-a325-6e1de5235342",
+        "ButtonSize": "Large",
+        "Index": -1,
+        "ParentGuid": "f329dc86-efcb-484a-bdfd-999e6f96e971"
       }
     ],
     "Groups": [

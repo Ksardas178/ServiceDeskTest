@@ -9,5 +9,10 @@ namespace avis.ServiceDesk.Server
 {
   public partial class ModuleInitializer
   {
+
+    public override bool IsModuleVisible()
+    {
+      return true;
+    }
   }
 }

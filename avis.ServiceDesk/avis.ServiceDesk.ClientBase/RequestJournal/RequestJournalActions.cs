@@ -102,7 +102,9 @@ namespace avis.ServiceDesk.Client
         return;
       }
       
-      Sungero.Workflow.SimpleTasks.Create(_obj.Name, _obj.Responsible).Show();
+      var task = Sungero.Workflow.SimpleTasks.Create(_obj.Name, _obj.Responsible);
+      task.Attachments.Add(_obj);
+      task.Show();
     }
 
     public virtual bool CanSendTaskForResponsible(Sungero.Domain.Client.CanExecuteActionArgs e)
@@ -210,7 +212,7 @@ namespace avis.ServiceDesk.Client
         !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.InWork) &&
         !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Closed);
     }
-        
+    
     /// <summary>
     /// Сброс полей с информацией о параметрах решения
     /// при смене состояния обращения.
