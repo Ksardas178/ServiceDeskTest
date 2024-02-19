@@ -59,10 +59,15 @@
     {
       "ItemId": "2a5be039-b60d-4fc3-b784-4966ca299367",
       "PreviousItemId": "afce4b0d-c9ee-469e-a53f-61fc2b9097c6"
+    },
+    {
+      "ItemId": "a017bbf2-d7b5-449e-8d42-6630a7b667cc",
+      "PreviousItemId": "2a5be039-b60d-4fc3-b784-4966ca299367"
     }
   ],
   "HandledEvents": [
-    "VisibilityServer"
+    "VisibilityServer",
+    "InitializingServer"
   ],
   "IconResourcesKeys": [],
   "Importance": "Medium",

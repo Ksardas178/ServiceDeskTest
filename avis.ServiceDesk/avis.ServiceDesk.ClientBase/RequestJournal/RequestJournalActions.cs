@@ -128,6 +128,12 @@ namespace avis.ServiceDesk.Client
         mail.To.Add(address);
       mail.Subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);
       
+      /*
+      //DEBUG
+      var document = Sungero.Content.ElectronicDocuments.Get(80);
+      mail.AddAttachment(document.Versions.First());
+      */
+      
       mail.Show();
     }
 
