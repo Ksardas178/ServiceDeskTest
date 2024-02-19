@@ -70,7 +70,9 @@
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "avis.ServiceDesk",
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "TimeFormat"
+  ],
   "ServerAssemblyName": "avis.ServiceDesk.Server",
   "ServerNamespace": "avis.ServiceDesk.Server",
   "SharedAssemblyName": "avis.ServiceDesk.Shared",

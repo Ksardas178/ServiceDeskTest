@@ -48,6 +48,8 @@ namespace avis.ServiceDesk
       //Установка состояния на "регистрацию" для новых и скопированных обращений.
       if (_obj.State.IsCopied || _obj.State.IsInserted)
         _obj.RequestState = ServiceDesk.RequestJournal.RequestState.Registration;
+      
+      Functions.RequestJournal.SetAvailableRequestFields(_obj);
     }
 
     public virtual void UrgencyValueInput(avis.ServiceDesk.Client.RequestJournalUrgencyValueInputEventArgs e)

@@ -123,8 +123,8 @@ namespace avis.ServiceDesk.Client
       var mail = MailClient.CreateMail();
       var address = _obj.Contact.Email;
       if (!string.IsNullOrEmpty(address))
-        mail.To.Add(address);      
-      mail.Subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);    
+        mail.To.Add(address);
+      mail.Subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);
       
       mail.Show();
     }
@@ -167,11 +167,12 @@ namespace avis.ServiceDesk.Client
     {
       _obj.RequestState = ServiceDesk.RequestJournal.RequestState.Closed;
       _obj.SolutionDate = Calendar.Now;
+      Functions.RequestJournal.SetAvailableRequestFields(_obj);
     }
 
     public virtual bool CanSetClosed(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      return !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Closed);
     }
 
     /// <summary>
@@ -182,11 +183,14 @@ namespace avis.ServiceDesk.Client
     {
       DropSolution();
       _obj.RequestState = ServiceDesk.RequestJournal.RequestState.Awaiting;
+      Functions.RequestJournal.SetAvailableRequestFields(_obj);
     }
 
     public virtual bool CanSetAwaiting(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      return
+        !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Awaiting) &&
+        !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Closed);
     }
 
     /// <summary>
@@ -197,23 +201,26 @@ namespace avis.ServiceDesk.Client
     {
       DropSolution();
       _obj.RequestState = ServiceDesk.RequestJournal.RequestState.InWork;
-    }
-    
-    /// <summary>
-    /// Сброс полей с информацией о параметрах решения
-    /// при смене состояния обращения.
-    /// </summary>
-    private virtual void DropSolution()
-    {
-      if (!Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Closed))
-          return;
-          
-      _obj.SolutionDate = null;
+      Functions.RequestJournal.SetAvailableRequestFields(_obj);
     }
 
     public virtual bool CanSetInWork(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      return
+        !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.InWork) &&
+        !Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Closed);
+    }
+        
+    /// <summary>
+    /// Сброс полей с информацией о параметрах решения
+    /// при смене состояния обращения.
+    /// </summary>
+    private void DropSolution()
+    {
+      if (!Equals(_obj.RequestState, ServiceDesk.RequestJournal.RequestState.Closed))
+        return;
+      
+      _obj.SolutionDate = null;
     }
     
     #endregion [Перевод состояний обращения]

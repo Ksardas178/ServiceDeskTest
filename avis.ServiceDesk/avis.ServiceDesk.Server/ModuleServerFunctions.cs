@@ -9,5 +9,12 @@ namespace avis.ServiceDesk.Server
   public class ModuleFunctions
   {
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public void Function1()
+    {
+    }
+
   }
 }
