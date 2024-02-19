@@ -163,4 +163,163 @@
   <data name="ControlGroup_a42bf318d172413491c19f06c4f8fc1b" xml:space="preserve">
     <value />
   </data>
+  <data name="Action_SetInWork" xml:space="preserve">
+    <value>В работу</value>
+  </data>
+  <data name="Action_SetInWorkDescription" xml:space="preserve">
+    <value>Отправить обращение в работу</value>
+  </data>
+  <data name="Action_SetInWorkHint" xml:space="preserve">
+    <value>Отправить обращение в работу</value>
+  </data>
+  <data name="Action_SetInWorkConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SetInWorkConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SetAwaiting" xml:space="preserve">
+    <value>Ожидать ответа</value>
+  </data>
+  <data name="Action_SetAwaitingDescription" xml:space="preserve">
+    <value>Отправить обращение в работу</value>
+  </data>
+  <data name="Action_SetAwaitingHint" xml:space="preserve">
+    <value>Ожидание ответа автора</value>
+  </data>
+  <data name="Action_SetAwaitingConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SetAwaitingConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SetClosed" xml:space="preserve">
+    <value>Закрыть обращение</value>
+  </data>
+  <data name="Action_SetClosedDescription" xml:space="preserve">
+    <value>Закрытие карточки обращения</value>
+  </data>
+  <data name="Action_SetClosedHint" xml:space="preserve">
+    <value>Закрытие карточки обращения</value>
+  </data>
+  <data name="Action_SetClosedConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SetClosedConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_NotifyRegistered" xml:space="preserve">
+    <value>О регистрации</value>
+  </data>
+  <data name="Action_NotifyRegisteredDescription" xml:space="preserve">
+    <value>Закрытие карточки обращения</value>
+  </data>
+  <data name="Action_NotifyRegisteredHint" xml:space="preserve">
+    <value>Отправка уведомления автору обращения</value>
+  </data>
+  <data name="Action_NotifyRegisteredConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_NotifyRegisteredConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendLetter" xml:space="preserve">
+    <value>Письмо</value>
+  </data>
+  <data name="Action_SendLetterDescription" xml:space="preserve">
+    <value>Отправить письмо автору обращения</value>
+  </data>
+  <data name="Action_SendLetterHint" xml:space="preserve">
+    <value>Отправить письмо автору обращения</value>
+  </data>
+  <data name="Action_SendLetterConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendLetterConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendTaskForResponsible" xml:space="preserve">
+    <value>Ответственному</value>
+  </data>
+  <data name="Action_SendTaskForResponsibleDescription" xml:space="preserve">
+    <value>Сформировать задачу ответственному за обращение</value>
+  </data>
+  <data name="Action_SendTaskForResponsibleHint" xml:space="preserve">
+    <value>Сформировать задачу ответственному за обращение</value>
+  </data>
+  <data name="Action_SendTaskForResponsibleConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendTaskForResponsibleConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_AddCommunication" xml:space="preserve">
+    <value>Добавить взаимодействие</value>
+  </data>
+  <data name="Action_AddCommunicationDescription" xml:space="preserve">
+    <value>Добавить текст переписки</value>
+  </data>
+  <data name="Action_AddCommunicationHint" xml:space="preserve">
+    <value>Добавить текст переписки</value>
+  </data>
+  <data name="Action_AddCommunicationConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_AddCommunicationConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_Correspondence_1f53f569eb8048a98ab1db7f844b8553" xml:space="preserve">
+    <value>Переписка</value>
+  </data>
+  <data name="Ribbon_LetterOptionsHint_11310323c22a4f47b46fa9c7842fb2bf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_LetterOptions_11310323c22a4f47b46fa9c7842fb2bf" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Ribbon_LetterOptionsDescription_11310323c22a4f47b46fa9c7842fb2bf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_Contacts_909b84c55ef947f68274ea853d78086b" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="FilterPanel_Company_5b3185f56c1948bab5085073d9877489" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="FilterPanel_Responsible_c571df8511b4443a864220cb03f75234" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="FilterPanel_InWork_86d0b77b447b469aa8ed148cc75cdb65" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="FilterPanel_Closed_55085d508b6d40d9b3dc0811b06c2e98" xml:space="preserve">
+    <value>Закрыто</value>
+  </data>
+  <data name="FilterPanel_Awaiting_368165b1f1ee4963a42b1a5c4d55cdbe" xml:space="preserve">
+    <value>Ожидание</value>
+  </data>
+  <data name="FilterPanel_Registration_e0e4d8888c4b4de785bd00e15d8b7847" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="FilterPanel_State_15f487f4a63e412186395fa9dc087e6d" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="FilterPanel_SolutionDate_e02d2d4b477943359786fad6f15a8ea0" xml:space="preserve">
+    <value>Дата решения (факт)</value>
+  </data>
+  <data name="FilterPanel_CurentMonth_d53f52463125460c9499862d0542fbc2" xml:space="preserve">
+    <value>Текущий месяц</value>
+  </data>
+  <data name="FilterPanel_PreviousMonth_1b2076fff826415a96455b96816ae686" xml:space="preserve">
+    <value>Прошлый месяц</value>
+  </data>
+  <data name="FilterPanel_Period_24c79dd6db8d4daeb380ed5a7d3c8e18" xml:space="preserve">
+    <value>Период</value>
+  </data>
+  <data name="FilterPanel_All_35af82f9e0f24ff98438161511c318d8" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="Ribbon_Status_44b574462bf14b07b65e8b5ef479cf56" xml:space="preserve">
+    <value>Состояние обращения</value>
+  </data>
 </root>

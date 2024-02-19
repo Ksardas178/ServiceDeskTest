@@ -10,6 +10,30 @@ namespace avis.ServiceDesk
   partial class RequestJournalClientHandlers
   {
 
+    public virtual void LaboriousnessValueInput(Sungero.Presentation.DoubleValueInputEventArgs e)
+    {
+      if (e.NewValue < 0)
+        e.AddError(avis.ServiceDesk.RequestJournals.Resources.LaboriousnessNegativeError);
+    }
+
+    public virtual void LaboriousnessPlanValueInput(Sungero.Presentation.DoubleValueInputEventArgs e)
+    {
+      if (e.NewValue < 0)
+        e.AddError(avis.ServiceDesk.RequestJournals.Resources.LaboriousnessNegativeError);
+    }
+
+    public virtual void SolutionDateValueInput(Sungero.Presentation.DateTimeValueInputEventArgs e)
+    {
+      if (e.NewValue < _obj.RegistrationDate)
+        e.AddError(avis.ServiceDesk.RequestJournals.Resources.SolutionDateError);
+    }
+
+    public virtual void SolutionDatePlanValueInput(Sungero.Presentation.DateTimeValueInputEventArgs e)
+    {
+      if (e.NewValue < Calendar.UserNow)
+        e.AddError(avis.ServiceDesk.RequestJournals.Resources.SolutionPlanDateError);
+    }
+
     public override void Showing(Sungero.Presentation.FormShowingEventArgs e)
     {
       //Выдача прав на редактирование полей для Администраторов SD.
@@ -23,7 +47,7 @@ namespace avis.ServiceDesk
       
       //Установка состояния на "регистрацию" для новых и скопированных обращений.
       if (_obj.State.IsCopied || _obj.State.IsInserted)
-        _obj.State = ServiceDesk.RequestJournal.RequestState.Registration;
+        _obj.RequestState = ServiceDesk.RequestJournal.RequestState.Registration;
     }
 
     public virtual void UrgencyValueInput(avis.ServiceDesk.Client.RequestJournalUrgencyValueInputEventArgs e)
@@ -39,7 +63,10 @@ namespace avis.ServiceDesk
     private void UpdatePriority(IUrgency urgency, IImpact impact)
     {
       if (urgency == null || impact == null)
+      {
+        _obj.Priority = null;
         return;
+      }
       
       //Автоматический подбор приоритета из справочника сравнения приоритетов.
       var priorityComparison = ServiceDesk.PriorityComparisons
@@ -47,9 +74,14 @@ namespace avis.ServiceDesk
         .Where(p => Equals(p.Urgency, urgency) && Equals(p.Impact, impact))
         .SingleOrDefault();
      
+      //Не найден либо не заполнен приоритет в справочнике.
       if (priorityComparison == null || priorityComparison.Priority == null)
+      {
+        _obj.Priority = null;
         return;
+      }
       
+      //Установка приоритета.
       _obj.Priority = priorityComparison.Priority;
       
       //Определение плановой даты выполнения.

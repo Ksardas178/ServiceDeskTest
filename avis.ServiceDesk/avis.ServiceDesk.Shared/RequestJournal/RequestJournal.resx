@@ -61,4 +61,86 @@
   <data name="SDAdmins" xml:space="preserve">
     <value>Администраторы SD</value>
   </data>
+  <data name="DefaultUrgencyName" xml:space="preserve">
+    <value>Средняя</value>
+  </data>
+  <data name="DefaultImpactName" xml:space="preserve">
+    <value>Среднее</value>
+  </data>
+  <data name="MailSubject" xml:space="preserve">
+    <value>Обращение №{0} - {1}</value>
+  </data>
+  <data name="SupportMail" xml:space="preserve">
+    <value>support@avis-expert.ru</value>
+  </data>
+  <data name="GoodAfternoon" xml:space="preserve">
+    <value>Добрый день</value>
+  </data>
+  <data name="Greetings" xml:space="preserve">
+    <value>Здравствуйте</value>
+  </data>
+  <data name="RegistrationMailBody" xml:space="preserve">
+    <value>{0}, {1}!
+От Вас поступило обращение:
+{2}</value>
+  </data>
+  <data name="RequestInfo" xml:space="preserve">
+    <value>Обращение зарегистрировано под номером: {0}
+Тип обращения: {1}
+Срочность: {2}
+Воздействие: {3}
+Плановая дата решения: {4}
+Плановые трудозатраты (чел/час): {5}
+
+Наш сотрудник свяжется с Вами для дальнейшей работы.
+В ходе переписки по обращению не изменяйте, пожалуйста, его тему, так как письма обрабатываются автоматически.</value>
+  </data>
+  <data name="CommunicationDialogHeader" xml:space="preserve">
+    <value>Переписка</value>
+  </data>
+  <data name="AddCommunicationButtonName" xml:space="preserve">
+    <value>Добавить взаимодействие</value>
+  </data>
+  <data name="ContactMailEmptyError" xml:space="preserve">
+    <value>У контактного лица отсутствует адрес электронной почты.</value>
+  </data>
+  <data name="MailCredentials" xml:space="preserve">
+    <value>С уважением,
+служба Help Desk
+компании "Авис Эксперт"
+
+{0}</value>
+  </data>
+  <data name="CompanyAddress" xml:space="preserve">
+    <value>Санкт-Петербург, ул. профессора Попова, д.37, БЦ \"Сенатор\"</value>
+  </data>
+  <data name="CompanyNumber" xml:space="preserve">
+    <value>тел. +7(812) 332-9236</value>
+  </data>
+  <data name="CompanySite" xml:space="preserve">
+    <value>www.avis-expert.ru</value>
+  </data>
+  <data name="MailTheme" xml:space="preserve">
+    <value>{0}, {1}!
+От Вас поступило обращение:
+{2}</value>
+  </data>
+  <data name="ResponsibleEmptyError" xml:space="preserve">
+    <value>Выберите ответственного за обращение.</value>
+  </data>
+  <data name="RequestNumber" xml:space="preserve">
+    <value>REQ{0}</value>
+  </data>
+  <data name="RequestName" xml:space="preserve">
+    <value>Обращение {0} от {1}</value>
+  </data>
+  <data name="SolutionPlanDateError" xml:space="preserve">
+    <value>Плановая дата решения обращения меньше текущей.</value>
+  </data>
+  <data name="SolutionDateError" xml:space="preserve">
+    <value>Дата решения обращения раньше даты регистрации.</value>
+  </data>
+  <data name="LaboriousnessNegativeError" xml:space="preserve">
+    <value>Трудозатраты не могут быть отрицательными.</value>
+  </data>
 </root>
