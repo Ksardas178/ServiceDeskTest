@@ -38,7 +38,7 @@ namespace avis.ServiceDesk
     {
       //Выдача прав на редактирование полей для Администраторов SD.
       var currentUser = Sungero.Company.Employees.Current;
-      var adminsSD = Groups.GetAll(g => g.Name == avis.ServiceDesk.RequestJournals.Resources.SDAdmins).FirstOrDefault();
+      var adminsSD = Groups.GetAll(g => g.Name == avis.ServiceDesk.Resources.SDAdmins).FirstOrDefault();
       if (adminsSD != null && currentUser.IncludedIn(adminsSD))
       {
         _obj.State.Properties.Communication.IsEnabled = true;

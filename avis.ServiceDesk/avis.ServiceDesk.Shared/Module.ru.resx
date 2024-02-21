@@ -61,4 +61,19 @@
   <data name="TimeFormat" xml:space="preserve">
     <value>dd.MM.yyyy hh:mm:ss</value>
   </data>
+  <data name="SDAdmins" xml:space="preserve">
+    <value>Администраторы SD</value>
+  </data>
+  <data name="SDUsers" xml:space="preserve">
+    <value>Пользователи SD</value>
+  </data>
+  <data name="SupportDocumentKindName" xml:space="preserve">
+    <value>Документ по поддержке</value>
+  </data>
+  <data name="SupportDocumentKindShortName" xml:space="preserve">
+    <value>ПОД</value>
+  </data>
+  <data name="ResponsibleForRequest" xml:space="preserve">
+    <value>Ответственный за обращение</value>
+  </data>
 </root>

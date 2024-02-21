@@ -11,12 +11,13 @@ namespace avis.ServiceDesk.Client
   {
     public virtual void SendForReview(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      
+      var task = Functions.SupportDocument.Remote.CreateReviewTask(_obj);
+      task.Show();
     }
 
     public virtual bool CanSendForReview(Sungero.Domain.Client.CanExecuteActionArgs e)
     {
-      return true;
+      return !_obj.State.IsInserted;
     }
 
   }

@@ -122,19 +122,10 @@ namespace avis.ServiceDesk.Client
     /// <param name="e"></param>
     public virtual void SendLetter(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      var mail = MailClient.CreateMail();
-      var address = _obj.Contact.Email;
-      if (!string.IsNullOrEmpty(address))
-        mail.To.Add(address);
-      mail.Subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);
+      var subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);
+      var address = _obj.Contact.Email ?? string.Empty;
       
-      /*
-      //DEBUG
-      var document = Sungero.Content.ElectronicDocuments.Get(80);
-      mail.AddAttachment(document.Versions.First());
-      */
-      
-      mail.Show();
+      Hyperlinks.Open($"mailto:{address}?subject={subject}");
     }
 
     public virtual bool CanSendLetter(Sungero.Domain.Client.CanExecuteActionArgs e)

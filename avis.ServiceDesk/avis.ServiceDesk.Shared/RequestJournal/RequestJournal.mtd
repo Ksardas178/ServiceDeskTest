@@ -822,7 +822,6 @@
   ],
   "PublicStructures": [],
   "ResourcesKeys": [
-    "SDAdmins",
     "DefaultUrgencyName",
     "DefaultImpactName",
     "MailSubject",

@@ -10,9 +10,9 @@ namespace avis.ServiceDesk.Server
   partial class RequestJournalFunctions
   {
     /// <summary>
-    /// Сформиро
+    /// Формирование данных о ФИО.
     /// </summary>
-    /// <param name="fulName"></param>
+    /// <param name="fulName">Полное имя.</param>
     /// <returns></returns>
     public static Structures.RequestJournal.NameData GetNameData(string fullName)
     {
@@ -44,9 +44,9 @@ namespace avis.ServiceDesk.Server
       var mail = Mail.CreateMailMessage();
       mail.From = avis.ServiceDesk.RequestJournals.Resources.SupportMail;
       mail.To.Add(addressee.Email);
-      mail.Subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);
-      
+      mail.Subject = avis.ServiceDesk.RequestJournals.Resources.MailSubjectFormat(_obj.Number, _obj.Description);      
       mail.Body = GetRegistrationMailBody(_obj);
+      
       Mail.Send(mail);
     }
 

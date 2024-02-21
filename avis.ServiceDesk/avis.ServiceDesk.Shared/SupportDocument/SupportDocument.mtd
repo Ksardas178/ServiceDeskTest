@@ -163,7 +163,9 @@
     }
   ],
   "PublicStructures": [],
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "SuportDocumentReviewTaskTheme"
+  ],
   "RibbonCardMetadata": {
     "NameGuid": "c7e91541-442c-4555-a1bd-5f6e7bacedb3",
     "Name": "RibbonCard",

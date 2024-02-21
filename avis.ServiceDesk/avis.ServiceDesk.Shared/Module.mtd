@@ -30,6 +30,11 @@
       "IsSolutionModule": true,
       "MaxVersion": "",
       "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.8.39.0"
     }
   ],
   "ExplorerTreeOrder": [
@@ -63,6 +68,18 @@
     {
       "ItemId": "a017bbf2-d7b5-449e-8d42-6630a7b667cc",
       "PreviousItemId": "2a5be039-b60d-4fc3-b784-4966ca299367"
+    },
+    {
+      "ItemId": "54262f8d-3f43-45a1-8825-13a229ba0283",
+      "PreviousItemId": "a017bbf2-d7b5-449e-8d42-6630a7b667cc"
+    },
+    {
+      "ItemId": "17229c8d-50e7-4f71-a570-4b2f5680a280",
+      "PreviousItemId": "54262f8d-3f43-45a1-8825-13a229ba0283"
+    },
+    {
+      "ItemId": "045792aa-fa32-4e24-ad83-133c9ebf8482",
+      "PreviousItemId": "17229c8d-50e7-4f71-a570-4b2f5680a280"
     }
   ],
   "HandledEvents": [
@@ -79,7 +96,12 @@
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "avis.ServiceDesk",
   "ResourcesKeys": [
-    "TimeFormat"
+    "TimeFormat",
+    "SDAdmins",
+    "SDUsers",
+    "SupportDocumentKindName",
+    "SupportDocumentKindShortName",
+    "ResponsibleForRequest"
   ],
   "ServerAssemblyName": "avis.ServiceDesk.Server",
   "ServerNamespace": "avis.ServiceDesk.Server",
