@@ -19,7 +19,39 @@ namespace avis.ServiceDesk.Server
       CreateDocumentKinds();
       CreateRoles();
       CreateApprovalRole(ServiceDesk.SupportDocumentApprovalRole.Type.ReqResponsible, avis.ServiceDesk.Resources.ResponsibleForRequest);
+      GrantRights();
     }
+    
+    #region [Выдача прав]
+    
+    private static void GrantRights()
+    {
+      InitializationLogger.Debug("Init: grant rights on catalogs");
+      
+      var sDAdmins = Roles.GetAll(r => r.Sid == ServiceDesk.Constants.Module.SDAdminsRoleGuid).First();
+      var sDUsers = Roles.GetAll(r => r.Sid == ServiceDesk.Constants.Module.SDUsersRoleGuid).First();
+      
+      GrantRights(sDAdmins, DefaultAccessRightsTypes.FullAccess);
+      GrantRights(sDUsers, DefaultAccessRightsTypes.Read);      
+      ServiceDesk.RequestJournals.AccessRights.Grant(sDAdmins, DefaultAccessRightsTypes.FullAccess);
+      ServiceDesk.RequestJournals.AccessRights.Grant(sDUsers, DefaultAccessRightsTypes.FullAccess);
+      
+      InitializationLogger.Debug("Init: grant rights on documents");
+      
+      ServiceDesk.SupportDocuments.AccessRights.Grant(sDAdmins, DefaultAccessRightsTypes.Create);
+      ServiceDesk.SupportDocuments.AccessRights.Grant(sDUsers, DefaultAccessRightsTypes.Create);
+    }
+    
+    private static void GrantRights(Sungero.CoreEntities.IRole role, Guid rightsType)
+    {
+      ServiceDesk.Impacts.AccessRights.Grant(role, rightsType);
+      ServiceDesk.Urgencies.AccessRights.Grant(role, rightsType);
+      ServiceDesk.Priorities.AccessRights.Grant(role, rightsType);
+      ServiceDesk.PriorityComparisons.AccessRights.Grant(role, rightsType);
+      ServiceDesk.SupportedCompanies.AccessRights.Grant(role, rightsType);
+    }
+    
+    #endregion [Выдача прав]
 
     #region [Создание документов]
     
@@ -148,25 +180,10 @@ namespace avis.ServiceDesk.Server
     /// </summary>
     private static void CreateRoles()
     {
-      InitializationLogger.Debug("Init: create roles.");
+      InitializationLogger.Debug("Init: create roles");
       
-      CreateRole(ServiceDesk.Resources.SDAdmins);
-      CreateRole(ServiceDesk.Resources.SDUsers);
-    }
-    
-    /// <summary>
-    /// Создание роли.
-    /// </summary>
-    /// <param name="name">Наименование роли.</param>
-    private static void CreateRole(string name)
-    {
-      InitializationLogger.DebugFormat("Init: create role '{0}'", name);
-      if (Sungero.CoreEntities.Roles.GetAll(r => r.Name == name).Any())
-        return;
-
-      var role = Sungero.CoreEntities.Roles.Create();
-      role.Name = name;
-      role.Save();
+      Sungero.Docflow.Server.ModuleInitializer.CreateRole(ServiceDesk.Resources.SDAdmins, ServiceDesk.Resources.SDAdminsDescription, ServiceDesk.Constants.Module.SDAdminsRoleGuid);
+      Sungero.Docflow.Server.ModuleInitializer.CreateRole(ServiceDesk.Resources.SDUsers, ServiceDesk.Resources.SDUsersDescription, ServiceDesk.Constants.Module.SDUsersRoleGuid);
     }
     
     /// <summary>
@@ -197,7 +214,9 @@ namespace avis.ServiceDesk.Server
     
     public override bool IsModuleVisible()
     {
-      return true;
+      return 
+        Users.Current.IncludedIn(ServiceDesk.Constants.Module.SDAdminsRoleGuid) ||
+        Users.Current.IncludedIn(ServiceDesk.Constants.Module.SDUsersRoleGuid);
     }
   }
 }

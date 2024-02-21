@@ -76,4 +76,10 @@
   <data name="ResponsibleForRequest" xml:space="preserve">
     <value>Ответственный за обращение</value>
   </data>
+  <data name="SDAdminsDescription" xml:space="preserve">
+    <value>Администраторы модуля Service Desk.</value>
+  </data>
+  <data name="SDUsersDescription" xml:space="preserve">
+    <value>Сотрудники, работающие с модулем Service Desk.</value>
+  </data>
 </root>

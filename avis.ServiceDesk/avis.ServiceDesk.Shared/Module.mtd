@@ -177,7 +177,9 @@
     "SDUsers",
     "SupportDocumentKindName",
     "SupportDocumentKindShortName",
-    "ResponsibleForRequest"
+    "ResponsibleForRequest",
+    "SDAdminsDescription",
+    "SDUsersDescription"
   ],
   "ServerAssemblyName": "avis.ServiceDesk.Server",
   "ServerNamespace": "avis.ServiceDesk.Server",
